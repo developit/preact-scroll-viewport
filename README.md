@@ -7,7 +7,7 @@ A compositional component that renders its children based on the current viewpor
 
 Useful for those super important business applications where one must show _all_ million rows.
 
-#### [Demo](https://jsfiddle.net/developit/t6qqnwn9/)
+#### [JSFiddle Demo](https://jsfiddle.net/developit/t6qqnwn9/)
 
 <a href="https://jsfiddle.net/developit/t6qqnwn9/">
 	<img alt="preview" src="https://i.gyazo.com/38f75b5db9615b0a08304d6cca209e47.gif" width="420">
