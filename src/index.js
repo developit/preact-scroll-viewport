@@ -43,13 +43,18 @@ export default class ScrollViewport extends Component {
 	componentDidMount() {
 		this.resized();
 		this.scrolled();
+
+		let scrollEventHolder = (this.props.scroll) ? document.querySelector(this.props.scroll) : window;
+
 		addEventListener('resize', this.resized, EVENT_OPTS);
-		addEventListener('scroll', this.scrolled, EVENT_OPTS);
+		scrollEventHolder.addEventListener('scroll', this.scrolled, EVENT_OPTS);
 	}
 
 	componentWillUnmount() {
+		let scrollEventHolder = (this.props.scroll) ? document.querySelector(this.props.scroll) : window;
+
 		removeEventListener('resize', this.resized, EVENT_OPTS);
-		removeEventListener('scroll', this.scrolled, EVENT_OPTS);
+		scrollEventHolder.removeEventListener('scroll', this.scrolled, EVENT_OPTS);
 	}
 
 	render({ overscan=10, rowHeight, defaultRowHeight, children, ...props }, { offset=0, height=0 }) {
