@@ -1,5 +1,7 @@
 # `<ScrollViewport />` <sub>_for [Preact]_</sub>
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/preact-scroll-viewport.svg)](https://greenkeeper.io/)
+
 [![NPM](https://img.shields.io/npm/v/preact-scroll-viewport.svg)](https://www.npmjs.com/package/preact-scroll-viewport)
 [![Travis](https://travis-ci.org/developit/preact-scroll-viewport.svg?branch=master)](https://travis-ci.org/developit/preact-scroll-viewport)
 
