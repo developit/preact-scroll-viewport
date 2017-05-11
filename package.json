@@ -1,7 +1,7 @@
 {
   "name": "preact-scroll-viewport",
   "amdName": "ScrollViewport",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Only renders items visible in the current viewport.",
   "main": "dist/preact-scroll-viewport.js",
   "minified:main": "dist/preact-scroll-viewport.min.js",
