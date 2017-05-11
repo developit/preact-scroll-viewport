@@ -1,7 +1,8 @@
 import { h, Component } from 'preact';
 
 const EVENT_OPTS = {
-	passive: true
+	passive: true,
+	capture: true
 };
 
 /** Virtual list, renders only visible items.
