@@ -1,7 +1,7 @@
 {
   "name": "preact-scroll-viewport",
   "amdName": "ScrollViewport",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Only renders items visible in the current viewport.",
   "main": "dist/preact-scroll-viewport.js",
   "minified:main": "dist/preact-scroll-viewport.min.js",
@@ -53,18 +53,18 @@
   "homepage": "https://github.com/developit/preact-scroll-viewport",
   "devDependencies": {
     "babel": "^6.5.2",
-    "babel-eslint": "^7.1.0",
+    "babel-eslint": "^8.0.1",
     "babel-plugin-transform-class-properties": "^6.18.0",
     "babel-plugin-transform-es2015-classes-simple": "^1.0.0",
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.18.0",
-    "chai": "^3.5.0",
-    "eslint": "^3.10.2",
-    "eslint-plugin-react": "^6.7.1",
-    "mocha": "^3.1.2",
-    "npm-run-all": "^3.1.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^4.0.1",
+    "npm-run-all": "^4.1.1",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-es3": "^1.0.3",
@@ -72,6 +72,6 @@
     "uglify-js": "^2.7.4"
   },
   "dependencies": {
-    "preact": "^6.4.0"
+    "preact": "^8.2.6"
   }
 }
