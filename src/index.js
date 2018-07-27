@@ -18,18 +18,21 @@ const EVENT_OPTS = {
  *		/>
  */
 export default class ScrollViewport extends Component {
-	resized = () => {
-		let height = window.innerHeight || document.documentElement.offsetHeight;
-		if (height!==this.state.height) {
-			this.setState({ height });
-		}
-	};
+	constructor(props){
+		super(props);
+		this.resized = () => {
+			let height = window.innerHeight || document.documentElement.offsetHeight;
+			if (height!==this.state.height) {
+				this.setState({ height });
+			}
+		};
 
-	scrolled = () => {
-		let offset = Math.max(0, this.base && -this.base.getBoundingClientRect().top || 0);
-		this.setState({ offset });
-		if (this.props.sync) this.forceUpdate();
-	};
+		this.scrolled = () => {
+			let offset = Math.max(0, this.base && -this.base.getBoundingClientRect().top || 0);
+			this.setState({ offset });
+			if (this.props.sync) this.forceUpdate();
+		};
+	}
 
 	computeRowHeight() {
 		if (this._height) return this._height;
